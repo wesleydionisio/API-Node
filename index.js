@@ -25,29 +25,335 @@ const convertToSlug = (text) => {
 
 const base = 'https://wesleydionisio.dev.br/agenda'
 const filetype = '.png';
+
+
 let db = [
 
-    { Name: 'Agudo', Url: `${base}/agudo${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Arroio do Tigre', Url: `${base}/arroio_do_tigre${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Caçapava do Sul', Url: `${base}/cacapava_do_sul${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Cachoeira do Sul', Url: `${base}/cachoeira_do_sul${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Candelária', Url: `${base}/candelaria${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Canguçu', Url: `${base}/cangucu${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Encruzilhada do Sul', Url: `${base}/encruzilhada_do_sul${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Faxinal do Soturno', Url: `${base}/faxinal_do_soturno${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Nova Palma', Url: `${base}/nova_palma${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Pantano Grande', Url: `${base}/pantano_grande${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Paraíso do Sul', Url: `${base}/paraiso_do_sul${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Salto do Jacuí', Url: `${base}/salto_do_jacui${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'São Gabriel', Url: `${base}/sao_gabriel${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Sobradinho', Url: `${base}/sobradinho${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Restinga Sêca', Url: `${base}/restinga_seca${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Rio Pardo', Url: `${base}/rio_pardo${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Vera Cruz', Url: `${base}/vera_cruz${filetype}`, Type: 'image', Active: true, Version: "v2", },
-    { Name: 'Espumoso', Url: `${base}/espumoso${filetype}`, Type: 'image', Active: true, Version: "v2", },
+    {
+        "name": "Agudo",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
 
+    },
 
-];
+    {
+        "name": "Arroio do Tigre",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Caçapava do Sul",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Cachoeira do Sul",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Candelária",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Canguçu",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Encruzilhada do Sul",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Faxinal do Soturno",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Nova Palma",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Pantano Grande",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Paraíso do Sul",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Salto do Jacuí",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "São Gabriel",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Sobradinho",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Restinga Sêca",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Rio Pardo",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Vera Cruz",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+    {
+        "name": "Espumoso",
+        "isActive": true,
+        "version": "v2",
+        "content": {
+            "messages": [
+                {
+                    "type": "image",
+                    "url": null,
+                    "buttons": []
+                }
+            ],
+            "actions": [],
+            "quick_replies": []
+        }
+
+    },
+
+]
 
 // Buscar Dados
 
@@ -55,10 +361,12 @@ routes.get('/:name', (req, res) => {
 
     const name = req.params.name;
     let choosenDb;
+    let choosenUrl;
 
     for (let i = 0; i < db.length; i++) {
-        if (convertToSlug(db[i].Name) == convertToSlug(name) && db[i].Active == true) {
+        if (convertToSlug(db[i].name) == convertToSlug(name) && db[i].isActive == true) {
 
+            choosenUrl = db[i].content.messages[0].url = `${base}/${convertToSlug(db[i].name)}${filetype}`;
             choosenDb = db[i];
 
         }
@@ -75,9 +383,17 @@ routes.get('/:name', (req, res) => {
 
 routes.get('/', (req, res) => {
 
+    for (let i = 0; i < db.length; i++) {
+
+        if (db[i].isActive) {
+
+            choosenUrl = db[i].content.messages[0].url = `${base}/${convertToSlug(db[i].name)}${filetype}`;
+
+        }
+
+    }
 
     return res.json(db);
-
 
 });
 
